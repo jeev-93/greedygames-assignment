@@ -7,7 +7,7 @@ rules = apriori(temp, parameter=list(support=0.01, confidence=0.5));
 
 temp <- tables$headers
 temp <- cbind(temp,tables$post,tables$params,tables$bottle)
-PerGame <- data.frame(gameid = as.numeric(), userid = as.character(), noofsession = as.numeric(),
+PerGame <- data.frame(userid = as.numeric(), userid = as.character(), noofsession = as.numeric(),
                       validity = as.numeric(), duration = as.numeric())
 loopPerGameOut <- PerGame
 t1 <- PerGame
